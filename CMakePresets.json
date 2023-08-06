@@ -1,0 +1,19 @@
+{
+    "version": 3,
+    "cmakeMinimumRequired": {
+      "major": 3,
+      "minor": 21,
+      "patch": 1
+    },
+    "configurePresets": [
+      {
+        "name": "x64_debug",
+        "description": "Debug build with full debugging symbols and no optimizations",
+        "binaryDir": "${sourceDir}/out/build/x64_debug",
+        "installDir": "{sourceDir}/out/install/x64_debug",
+        "cacheVariables": {
+          "CMAKE_BUILD_TYPE": "Debug"
+        }
+      }
+    ]
+  }
