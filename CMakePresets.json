@@ -11,8 +11,12 @@
         "description": "Debug build with full debugging symbols and no optimizations",
         "binaryDir": "${sourceDir}/out/build/x64_debug",
         "installDir": "{sourceDir}/out/install/x64_debug",
+        "generator": "Ninja",
         "cacheVariables": {
-          "CMAKE_BUILD_TYPE": "Debug"
+          "CMAKE_BUILD_TYPE": "Debug",
+          "CMAKE_C_COMPILER": "gcc.exe",
+          "CMAKE_CXX_COMPILER": "g++.exe"
+
         }
       }
     ]
